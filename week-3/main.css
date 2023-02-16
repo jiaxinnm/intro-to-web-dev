@@ -1,0 +1,21 @@
+/* RESET */
+/* Command or COntrol + / will usually make a comment tag to your text editor */
+
+/* remove browser default margins onn page */
+html, body {
+	margin: 0;
+}
+/* border-box tells the browser to account for any border and padding in the values you specify for an element's width and height.*/
+* {
+	box-sizing: border-box;
+}
+
+/* when you float you need a clearfix on the container element to make sure that it wraps around the floated items as expected */
+
+.clearfix::after {
+	display: block;
+	clear:both;
+	/* ensure cross browser and legacy browser compatability */
+	height: 0;
+	font-size:0;
+}
